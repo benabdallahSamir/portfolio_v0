@@ -1,5 +1,14 @@
+import { Home, Navbar } from "./components/index";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div className="app">
+      <Navbar />
+      <main>
+        <Home />
+      </main>
+    </div>
+  );
 };
 
 export default App;
