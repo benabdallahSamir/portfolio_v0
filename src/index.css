@@ -1,7 +1,7 @@
 /* vars */
 :root {
   --bg-color: #1f1f1f;
-  --primary-color: #9c664470;
+  --primary-color: #945f3e;
   --secondary-color: #ede0d4;
 }
 /* init code */
@@ -14,9 +14,14 @@ html {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   color: var(--secondary-color);
-  background-color: transparent;
   border: none;
   outline: none;
+}
+img {
+  background-color: transparent !important;
+}
+body {
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -28,7 +33,7 @@ a {
 }
 /* init all pages */
 .page {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   padding-top: 10vh;
 }
@@ -42,7 +47,8 @@ nav {
   height: 10vh;
   width: 100%;
   padding-inline: 3%;
-  position: relative;
+  position: fixed;
+  top: 0;
   background-color: var(--primary-color);
   ul {
     margin-left: auto;
@@ -123,7 +129,38 @@ main {
     }
   }
 }
-
+.about {
+  min-height: 100vh;
+  article {
+    min-height: 90vh;
+    padding-left: 100px;
+    h1 {
+      text-transform: capitalize;
+      font-size: 50px;
+      color: var(--primary-color);
+      letter-spacing: 2px;
+    }
+    p {
+      width: 500px;
+      height: max-content;
+      margin-block: 10px 20px;
+      font-size: 17px;
+      span {
+        color: var(--primary-color);
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .skills {
+    height: max-content;
+    background-color: var(--bg-color);
+    padding-block: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 /* com style */
 .btn {
   padding: 10px 15px;
@@ -132,8 +169,31 @@ main {
   border: 1px solid var(--secondary-color);
   text-decoration: none;
   transition: 0.3s;
+  svg {
+    margin-right: 10px;
+  }
   &:hover {
     background-color: var(--secondary-color);
     color: var(--bg-color);
+    svg {
+      background-color: var(--bg-color);
+    }
+  }
+}
+.SkillsCard {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: solid 1px var(--secondary-color);
+  justify-content: center;
+  cursor: pointer;
+  svg {
+    font-size: 100px;
+  }
+  &:hover {
+    transition: 0.3s;
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
   }
 }

@@ -6,7 +6,7 @@ import Btn from "./Btn";
 import { faContactCard, faUser } from "@fortawesome/free-regular-svg-icons";
 const Home = () => {
   return (
-    <section className="home" id="#">
+    <section className="home page" id="#">
       <aside>
         <h1>hello there !</h1>
         <h1>
@@ -23,8 +23,8 @@ const Home = () => {
           }}
         />
         <div className="btn-container">
-          <Btn title={"Contact Me"} url={"/contact"} icon={faContactCard} />
-          <Btn title={"About Me"} url={"/about"} icon={faUser} />
+          <Btn title={"Contact Me"} url={"/#contact"} icon={faContactCard} />
+          <Btn title={"About Me"} url={"/#about"} icon={faUser} />
         </div>
       </aside>
       <div>

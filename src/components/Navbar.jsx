@@ -20,7 +20,7 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a className="flex-ac" href="/about">
+          <a className="flex-ac" href="/#about">
             <FontAwesomeIcon icon={faUser} />
             <p>about me</p>
           </a>
