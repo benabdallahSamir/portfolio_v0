@@ -39,6 +39,12 @@
     article {
       padding-left: 0;
     }
+    .skills h1 {
+      padding-left: 0;
+    }
+  }
+  .project h1 {
+    padding-left: 30px;
   }
 }
 @media screen and (max-width: 640px) {

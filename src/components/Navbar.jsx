@@ -26,7 +26,7 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a className="flex-ac" href="/project">
+          <a className="flex-ac" href="/#project">
             <FontAwesomeIcon icon={faFolder} />
             <p>projects</p>
           </a>

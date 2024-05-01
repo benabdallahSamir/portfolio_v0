@@ -45,16 +45,19 @@ const About = () => {
         <Btn title={"download my cv"} />
       </article>
       <div className="skills">
-        <SkillsCard icon={faBootstrap} />
-        <SkillsCard icon={faFigma} />
-        <SkillsCard icon={faJava} />
-        <SkillsCard icon={faJs} />
-        <SkillsCard icon={faHtml5} />
-        <SkillsCard icon={faCss3} />
-        <SkillsCard icon={faNodeJs} />
-        <SkillsCard icon={faGithub} />
-        <SkillsCard icon={faGit} />
-        <SkillsCard icon={faDatabase} />
+        <h1>My Skills</h1>
+        <div className="container">
+          <SkillsCard icon={faBootstrap} />
+          <SkillsCard icon={faFigma} />
+          <SkillsCard icon={faJava} />
+          <SkillsCard icon={faJs} />
+          <SkillsCard icon={faHtml5} />
+          <SkillsCard icon={faCss3} />
+          <SkillsCard icon={faNodeJs} />
+          <SkillsCard icon={faGithub} />
+          <SkillsCard icon={faGit} />
+          <SkillsCard icon={faDatabase} />
+        </div>
       </div>
     </div>
   );
