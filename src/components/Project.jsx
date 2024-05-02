@@ -1,6 +1,7 @@
 import {
   ageCalculator,
   huddleLandingPage,
+  recipePage,
   sunnysideAgency,
 } from "../assets/assets.js";
 import ProjectCard from "./ProjectCard.jsx";
@@ -30,13 +31,13 @@ const projects = [
     p: "",
     img: huddleLandingPage,
   },
-  // {
-  //   title: "",
-  //   liveSite: "",
-  //   sourceCode: "",
-  //   p: "",
-  //   img: "",
-  // },
+  {
+    title: "recipe page",
+    liveSite: "https://samirbenabdallah.github.io/recipe-page",
+    sourceCode: "https://github.com/samirBenabdallah/recipe-page.git",
+    p: "",
+    img: recipePage,
+  },
   // {
   //   title: "",
   //   liveSite: "",

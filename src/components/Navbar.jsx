@@ -32,7 +32,7 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a className="flex-ac" href="/contact">
+          <a className="flex-ac" href="/#contact">
             <FontAwesomeIcon icon={faContactCard} />
             <p>contact</p>
           </a>

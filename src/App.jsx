@@ -1,4 +1,4 @@
-import { About, Home, Navbar, Project } from "./components/index";
+import { About, Contact, Home, Navbar, Project } from "./components/index";
 
 const App = () => {
   return (
@@ -8,6 +8,7 @@ const App = () => {
         <Home />
         <About />
         <Project />
+        <Contact />
       </main>
     </div>
   );
