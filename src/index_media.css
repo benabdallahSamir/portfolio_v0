@@ -1,3 +1,24 @@
+@media screen and (min-width: 800px) {
+  .home aside {
+    padding-left: 70px;
+  }
+  .about :is(article, .skills h1) {
+    padding-left: 100px;
+  }
+  nav ul li {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+@media screen and (min-width: 640px) {
+  nav {
+    ul li:hover::before {
+      border: 1px solid var(--secondary-color);
+      width: 100%;
+    }
+  }
+}
 @media screen and (max-width: 800px) {
   .app {
     display: flex;
@@ -11,36 +32,20 @@
       flex-direction: column;
       margin: auto;
       li {
-        margin-inline: 0px;
-        margin-block: 20px;
+        margin: 20px 0px;
         p {
           display: none;
         }
       }
     }
   }
-  main {
-    width: calc(100% - 80px);
-  }
-  .page {
-    padding-left: 100px;
-  }
   .home {
     height: 100vh;
     flex-direction: column;
     aside {
       margin: 80px auto 0;
-      padding: 0;
       text-align: center;
       width: 100%;
-    }
-  }
-  .about {
-    article {
-      padding-left: 0;
-    }
-    .skills h1 {
-      padding-left: 0;
     }
   }
   .project h1 {
@@ -51,21 +56,15 @@
   .app {
     position: relative;
   }
-  main {
-    width: 100%;
-  }
   nav {
-    padding: 0;
     width: 0;
     height: 100vh;
-    z-index: 3;
-    top: 0;
     left: 0;
     transition: 0.5s;
     h1 {
       cursor: pointer;
       transition: 0.5s;
-      margin-top: 10px;
+      margin-top: 40px;
       transform: translateX(100%);
     }
     ul {
@@ -86,9 +85,6 @@
       font-size: 35px !important;
     }
   }
-  .page {
-    padding-left: 0px;
-  }
   .about {
     article {
       width: 80%;
@@ -98,17 +94,24 @@
       }
     }
     .skills {
-      padding: 30px 30px;
+      padding-inline: 30px;
     }
   }
   .SkillsCard {
-    width: 120px;
-    height: 120px;
+    --size: 120px;
     svg {
       font-size: 70px;
     }
   }
   .contact {
     padding: 100px 20px 0px;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 641px) {
+  .page {
+    padding-left: 100px;
+  }
+  s main {
+    width: calc(100% - 80px);
   }
 }
